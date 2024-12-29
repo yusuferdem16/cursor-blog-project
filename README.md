@@ -9,9 +9,10 @@ Bu proje, Cursor IDE'nin AI destekli özelliklerini test etmek amacıyla tamamen
 - Tailwind CSS
 - React Markdown
 
-## Ekran Görüntüsü
+## Ekran Görüntüleri
 
 ![Blog Ana Sayfa](./public/blog-screenshot.png)
+![Blog Detay Sayfa](./public/blog-detail-screenshot.png)
 
 ## Özellikler
 
