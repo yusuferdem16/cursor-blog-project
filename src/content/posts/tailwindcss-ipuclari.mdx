@@ -1,0 +1,47 @@
+---
+title: 'Tailwind CSS İpuçları ve En İyi Uygulamalar'
+date: '2024-01-03'
+description: 'Tailwind CSS ile daha etkili ve hızlı web geliştirme için önemli ipuçları'
+---
+
+# Tailwind CSS ile Verimli Web Geliştirme
+
+Tailwind CSS, utility-first yaklaşımıyla modern web geliştirmede popüler bir CSS framework'üdür.
+
+## Responsive Tasarım
+
+Tailwind'in responsive önekleri ile mobil öncelikli tasarım yapmak çok kolay:
+
+```html
+<div class="text-sm md:text-base lg:text-lg">
+  Responsive metin
+</div>
+```
+
+## Dark Mode Desteği
+
+Dark mode desteği eklemek için `dark:` önekini kullanabilirsiniz:
+
+```html
+<div class="bg-white dark:bg-gray-800 text-black dark:text-white">
+  Otomatik dark mode
+</div>
+```
+
+## Özelleştirme
+
+`tailwind.config.js` dosyasında kendi renk paletinizi ve diğer özellikleri tanımlayabilirsiniz:
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#FF5733',
+      }
+    }
+  }
+}
+```
+
+Tailwind CSS, modern web projelerinde geliştirme sürecini önemli ölçüde hızlandırır. 

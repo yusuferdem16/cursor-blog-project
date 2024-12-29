@@ -1,0 +1,42 @@
+---
+title: 'React Hooks: Modern React Geliştirmenin Temelleri'
+date: '2024-01-02'
+description: 'React Hooks kullanımı ve en yaygın hook türleri hakkında detaylı bir rehber'
+---
+
+# React Hooks Kullanım Rehberi
+
+React Hooks, fonksiyonel bileşenlerde state yönetimi ve yaşam döngüsü özelliklerini kullanmamızı sağlayan özelliklerdir.
+
+## useState Hook'u
+
+En temel ve sık kullanılan hook'lardan biri `useState`'dir. Bileşen içinde state yönetimini sağlar:
+
+```jsx
+const [count, setCount] = useState(0);
+```
+
+## useEffect Hook'u
+
+`useEffect`, bileşenin yaşam döngüsü olaylarını yönetmemizi sağlar:
+
+```jsx
+useEffect(() => {
+  console.log('Bileşen yüklendi');
+  return () => console.log('Bileşen kaldırıldı');
+}, []);
+```
+
+## Custom Hooks
+
+Kendi hook'larımızı oluşturarak kod tekrarını önleyebiliriz:
+
+```jsx
+function useWindowSize() {
+  const [size, setSize] = useState([window.innerWidth, window.innerHeight]);
+  // ...
+  return size;
+}
+```
+
+React Hooks, modern React geliştirmede vazgeçilmez bir araç haline gelmiştir. 

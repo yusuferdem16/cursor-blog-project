@@ -1,0 +1,52 @@
+---
+title: 'TypeScript ile Güvenli JavaScript Geliştirme'
+date: '2024-01-04'
+description: 'TypeScript kullanarak daha güvenli ve ölçeklenebilir JavaScript uygulamaları geliştirme'
+---
+
+# TypeScript: JavaScript'in Güçlü Müttefiki
+
+TypeScript, JavaScript'e statik tip desteği ekleyerek daha güvenli kod yazmamızı sağlar.
+
+## Temel Tip Tanımlamaları
+
+TypeScript'te değişken ve fonksiyon parametrelerine tip tanımlamaları ekleyebiliriz:
+
+```typescript
+let name: string = 'Ahmet';
+let age: number = 25;
+let isActive: boolean = true;
+
+function greet(name: string): string {
+  return `Merhaba, ${name}!`;
+}
+```
+
+## Interface ve Type Tanımlamaları
+
+Karmaşık veri yapılarını tanımlamak için interface ve type kullanabiliriz:
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age?: number; // Opsiyonel alan
+}
+
+type UserRole = 'admin' | 'user' | 'guest';
+```
+
+## Jenerik Tipler
+
+Yeniden kullanılabilir ve tip güvenli fonksiyonlar için jenerikler:
+
+```typescript
+function getFirst<T>(array: T[]): T | undefined {
+  return array[0];
+}
+
+const first = getFirst<string>(['a', 'b', 'c']); // string
+```
+
+TypeScript, büyük projelerde kod kalitesini ve geliştirici deneyimini önemli ölçüde artırır. 
